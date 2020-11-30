@@ -8,6 +8,8 @@ function replaceAt(string, index, replacement) {
 
 // https://en.wikipedia.org/wiki/Caesar_cipher
 function caesarCipher(text, key) {
+    if (typeof text != "string" || typeof key != "number") return "";
+
     const alphabet = "abcdefghijklmnopqrstuvwxyz";
     let myString = text.toLowerCase();
 
@@ -33,3 +35,5 @@ function caesarCipher(text, key) {
 }
 
 console.log(caesarCipher(`abcdefghijklmnopqrstuvwxyz ABC,.-!123`, -28));
+console.log(caesarCipher(65, -28));
+console.log(caesarCipher(`abcdefghijklmnopqrstuvwxyz ABC,.-!123`, "a"));
