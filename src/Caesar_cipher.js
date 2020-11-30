@@ -1,5 +1,5 @@
 // Replaces a character at a specified index in a string
-function replaceAt(string, index, replacement) {
+export function replaceAt(string, index, replacement) {
     return `${string.substring(0, index)}${replacement}${string.substring(
         index + 1,
         string.length
