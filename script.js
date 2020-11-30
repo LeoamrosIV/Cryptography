@@ -1,4 +1,4 @@
-import { caesarCipher } from "./src/Caesar_cipher.js";
+import { caesarCipher } from "./ciphers/Caesar_cipher.js";
 
 const caesarForm = document.querySelector("#caesarForm");
 const caesarResult = document.querySelector("#caesarResult");
